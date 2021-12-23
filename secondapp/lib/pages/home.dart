@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
             var data = json.decode(snapshot.data.toString());
             return ListView.builder(
               itemBuilder: (BuildContext context, int index){
-              return MyBox(data[index]['title'], data[index]['subtitle'], data[index]['image_url']);
+              return MyBox(data[index]['title'], data[index]['subtitle'], data[index]['image_url'], data[index]['detail']);
             },
             itemCount: data.length,
           );
@@ -35,7 +35,13 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget MyBox(String title, String subtitle, String imagelink){
+  Widget MyBox(String title, String subtitle, String imagelink, String detail){
+    var v1, v2, v3, v4;
+    v1 = title;
+    v2 = subtitle;
+    v3 = imagelink;
+    v4 = detail;
+
     return Container(
       margin: EdgeInsets.only(top: 8),
       padding: EdgeInsets.all(20),
@@ -67,6 +73,13 @@ class _HomePageState extends State<HomePage> {
               color: Colors.white
             ),
           ),
+          TextButton(
+            onPressed: (){
+              print("Next page >>");
+              Navigator.push(context, MaterialPageRoute(builder: (context) => DetailsPage(v1, v2, v3, v4)));
+            }, 
+            child: Text("read more"), 
+          )
         ],
       ),
     );
