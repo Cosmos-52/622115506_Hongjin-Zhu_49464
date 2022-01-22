@@ -2,39 +2,38 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'dart:async';
-  
-   
 
-Future<Album> createAlbum(String title) async{
-  final response = await http.post(Uri.parse('https://jsonplacholder.typicode.com/albums'),
-    headers: <String,String>{
-      'Content-Type': 'application/json; charset=UTF-8',
-    },
-    body: jsonEncode(<String,String>{
-      'title': title,
-    })
-  );
+Future<Album> createAlbum(String title) async {
+  final response =
+      await http.post(Uri.parse('https://jsonplacholder.typicode.com/albums'),
+          headers: <String, String>{
+            'Content-Type': 'application/json; charset=UTF-8',
+          },
+          body: jsonEncode(<String, String>{
+            'title': title,
+          }));
 
-  if(response.statusCode == 201){
+  if (response.statusCode == 201) {
     return Album.fromJson(jsonDecode(response.body));
-  }else{
+  } else {
     throw Exception('Fail to post');
   }
 }
 
-class Album{
+class Album {
   final int id;
   final String title;
 
   Album({required this.id, required this.title});
 
-  factory Album.fromJson(Map<String, dynamic> json){
+  factory Album.fromJson(Map<String, dynamic> json) {
     return Album(
       id: json['id'],
       title: json['title'],
     );
   }
 }
+
 void main() {
   runApp(const MyApp());
 }
@@ -48,7 +47,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -58,7 +56,6 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
-
 
   final String title;
 
@@ -72,7 +69,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-   
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -84,38 +80,39 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-}
 
-Column buildColumn(){
-  return Column(
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: <Widget>[
-      TextField(
-        controller: _controller,
-        decoration: const InputDecoration(hintText: 'Enter Title'),
-      ),
-      ElevatedButton(
-        onPressed: (){
-          setState((){
-            _futureAlbum = createAlbum(_controller.text);
-          });
-        },
-      ),
-    ],
-  );
-}
+  Column buildColumn() {
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        TextField(
+          controller: _controller,
+          decoration: const InputDecoration(hintText: 'Enter Title'),
+        ),
+        ElevatedButton(
+          onPressed: () {
+            setState(() {
+              _futureAlbum = createAlbum(_controller.text);
+            });
+          }, 
+          child: const Text('Create Data'),
+        ),
+      ],
+    );
+  }
 
-FutureBuilder<Album> buildFutureBuilder(){
-  return FutureBuilder<Album>(
-    future: _futureAlbum,
-    builder: (context, snapshot){
-      if(snapshot.hasData){
-        return Text(snapshot.data!.title);
-      }else if(snapshot.hasError){
-        return Text('${snapshot.error}');
-      }
+  FutureBuilder<Album> buildFutureBuilder() {
+    return FutureBuilder<Album>(
+      future: _futureAlbum,
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          return Text(snapshot.data!.title);
+        } else if (snapshot.hasError) {
+          return Text('${snapshot.error}');
+        }
 
-      return const CircularProgressIndicator();
-    },
-  );
+        return const CircularProgressIndicator();
+      },
+    );
+  }
 }

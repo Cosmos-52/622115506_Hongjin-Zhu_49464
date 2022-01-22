@@ -1,0 +1,183 @@
+[debug] [2022-01-22T07:15:44.552Z] ----------------------------------------------------------------------
+[debug] [2022-01-22T07:15:44.554Z] Command:       /usr/local/bin/firebase /Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2022-01-22T07:15:44.554Z] CLI Version:   9.16.5
+[debug] [2022-01-22T07:15:44.554Z] Platform:      darwin
+[debug] [2022-01-22T07:15:44.554Z] Node Version:  v12.18.1
+[debug] [2022-01-22T07:15:44.555Z] Time:          Sat Jan 22 2022 15:15:44 GMT+0800 (China Standard Time)
+[debug] [2022-01-22T07:15:44.555Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-22T07:15:44.556Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-01-22T07:15:44.567Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-22T07:15:44.567Z] > authorizing via signed-in user (hongjin_zhu@elearning.cmu.ac.th)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/zhuhongjin/622115506_Hongjin-Zhu_49464
+
+[debug] [2022-01-22T07:16:27.780Z] Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:154:25)
+    at writeGeneric (internal/stream_base_commons.js:145:3)
+    at WriteStream.Socket._writeGeneric (net.js:786:11)
+    at WriteStream.Socket._write (net.js:798:8)
+    at doWrite (_stream_writable.js:403:12)
+    at writeOrBuffer (_stream_writable.js:387:5)
+    at WriteStream.Writable.write (_stream_writable.js:318:11)
+    at EventEmitter.signalExit.alwaysLast (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/restore-cursor/index.js:7:18)
+    at EventEmitter.emit (events.js:315:20)
+    at EventEmitter.emit (domain.js:482:12)
+    at emit (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/signal-exit/index.js:78:11)
+    at process.listener (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/signal-exit/index.js:94:7)
+    at process.emit (events.js:315:20)
+[debug] [2022-01-22T07:16:41.013Z] ----------------------------------------------------------------------
+[debug] [2022-01-22T07:16:41.014Z] Command:       /usr/local/bin/firebase /Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init hosting
+[debug] [2022-01-22T07:16:41.014Z] CLI Version:   9.16.5
+[debug] [2022-01-22T07:16:41.014Z] Platform:      darwin
+[debug] [2022-01-22T07:16:41.014Z] Node Version:  v12.18.1
+[debug] [2022-01-22T07:16:41.015Z] Time:          Sat Jan 22 2022 15:16:41 GMT+0800 (China Standard Time)
+[debug] [2022-01-22T07:16:41.015Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-22T07:16:41.017Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-01-22T07:16:41.027Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-22T07:16:41.027Z] > authorizing via signed-in user (hongjin_zhu@elearning.cmu.ac.th)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/zhuhongjin/622115506_Hongjin-Zhu_49464
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-22T07:17:08.084Z] > refreshing access token with scopes: []
+[debug] [2022-01-22T07:17:08.084Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-22T07:17:51.516Z] Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:154:25)
+    at writeGeneric (internal/stream_base_commons.js:145:3)
+    at WriteStream.Socket._writeGeneric (net.js:786:11)
+    at WriteStream.Socket._write (net.js:798:8)
+    at doWrite (_stream_writable.js:403:12)
+    at writeOrBuffer (_stream_writable.js:387:5)
+    at WriteStream.Writable.write (_stream_writable.js:318:11)
+    at EventEmitter.signalExit.alwaysLast (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/restore-cursor/index.js:7:18)
+    at EventEmitter.emit (events.js:315:20)
+    at EventEmitter.emit (domain.js:482:12)
+    at emit (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/signal-exit/index.js:78:11)
+    at process.listener (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/signal-exit/index.js:94:7)
+    at process.emit (events.js:315:20)
+[debug] [2022-01-22T07:20:55.579Z] ----------------------------------------------------------------------
+[debug] [2022-01-22T07:20:55.580Z] Command:       /usr/local/bin/firebase /Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init hosting
+[debug] [2022-01-22T07:20:55.580Z] CLI Version:   9.16.5
+[debug] [2022-01-22T07:20:55.580Z] Platform:      darwin
+[debug] [2022-01-22T07:20:55.580Z] Node Version:  v12.18.1
+[debug] [2022-01-22T07:20:55.581Z] Time:          Sat Jan 22 2022 15:20:55 GMT+0800 (China Standard Time)
+[debug] [2022-01-22T07:20:55.581Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-22T07:20:55.585Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-01-22T07:20:55.595Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-22T07:20:55.596Z] > authorizing via signed-in user (hongjin_zhu@elearning.cmu.ac.th)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/zhuhongjin/622115506_Hongjin-Zhu_49464
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-22T07:21:09.600Z] > refreshing access token with scopes: []
+[debug] [2022-01-22T07:21:09.600Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-22T07:21:52.814Z] Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:154:25)
+    at writeGeneric (internal/stream_base_commons.js:145:3)
+    at WriteStream.Socket._writeGeneric (net.js:786:11)
+    at WriteStream.Socket._write (net.js:798:8)
+    at doWrite (_stream_writable.js:403:12)
+    at writeOrBuffer (_stream_writable.js:387:5)
+    at WriteStream.Writable.write (_stream_writable.js:318:11)
+    at EventEmitter.signalExit.alwaysLast (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/restore-cursor/index.js:7:18)
+    at EventEmitter.emit (events.js:315:20)
+    at EventEmitter.emit (domain.js:482:12)
+    at emit (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/signal-exit/index.js:78:11)
+    at process.listener (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/signal-exit/index.js:94:7)
+    at process.emit (events.js:315:20)
+[debug] [2022-01-22T07:38:57.311Z] ----------------------------------------------------------------------
+[debug] [2022-01-22T07:38:57.313Z] Command:       /usr/local/bin/firebase /Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase login
+[debug] [2022-01-22T07:38:57.313Z] CLI Version:   9.16.5
+[debug] [2022-01-22T07:38:57.313Z] Platform:      darwin
+[debug] [2022-01-22T07:38:57.313Z] Node Version:  v12.18.1
+[debug] [2022-01-22T07:38:57.314Z] Time:          Sat Jan 22 2022 15:38:57 GMT+0800 (GMT+08:00)
+[debug] [2022-01-22T07:38:57.314Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-22T07:38:57.316Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=756731392&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-01-22T07:39:04.675Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/0AX4XfWinq8qwNxWm4rFffpnhceJK8Y1i3s0BPIGZY5_4unBzk2T3645ibfWA68fLCn7ZtA","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"http://localhost:9005","grant_type":"authorization_code"}
+[debug] [2022-01-22T07:40:02.803Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/0AX4XfWg1J36p_Xof7ibmY9eE3KmQdHm90Ju1IqOxDTa7e2OYvPod9CdEMkYbAI3vFUnxeQ","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"http://localhost:9005","grant_type":"authorization_code"}
+[debug] [2022-01-22T07:40:19.685Z] Token Fetch Error: FirebaseError: Server Error. connect ETIMEDOUT 142.251.43.13:443
+    at Request._callback (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/api.js:32:31)
+    at self.callback (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.onRequestError (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/request/request.js:877:8)
+    at ClientRequest.emit (events.js:315:20)
+    at ClientRequest.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket.socketErrorListener (_http_client.js:426:9)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=756731392&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob
+[info] 
+[debug] [2022-01-22T07:40:35.479Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/1AX4XfWj2ZHQvkL8a6C96P6qOlBBMKDaFjg_ggQDccy4Htj6fkAY7kKMzCfU","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"urn:ietf:wg:oauth:2.0:oob","grant_type":"authorization_code"}
+[debug] [2022-01-22T07:41:17.808Z] Token Fetch Error: FirebaseError: Server Error. connect ETIMEDOUT 142.251.43.13:443
+    at Request._callback (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/api.js:32:31)
+    at self.callback (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.onRequestError (/Users/zhuhongjin/.cache/firebase/tools/lib/node_modules/request/request.js:877:8)
+    at ClientRequest.emit (events.js:315:20)
+    at ClientRequest.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket.socketErrorListener (_http_client.js:426:9)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
