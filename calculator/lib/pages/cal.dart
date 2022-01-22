@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class CalculatePage extends StatefulWidget {
@@ -18,7 +20,6 @@ class _CalculatePageState extends State<CalculatePage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     result.text="Buy X apples.Because each apple cosT X THB,You have to pay X THB";
   }
