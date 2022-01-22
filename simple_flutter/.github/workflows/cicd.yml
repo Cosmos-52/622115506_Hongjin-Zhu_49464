@@ -1,14 +1,14 @@
 name: CICD
 on:
   push:
-    brances:
+    branches:
     - '*'
 jobs:
   build:
     name: build flutter
-    runs-on: macos-12
+    runs-on: macos-11
     env:
-      JAVA-VERSION: "17.0.1"
+      JAVA_VERSION: "11.0"
       FLUTTER_VERSION: "2.8.1"
     steps:
       - uses: actions/checkout@v2
